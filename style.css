@@ -1,0 +1,30 @@
+body {
+  background-color: lightblue;
+  font-size: 150%;
+  font-family: arial;
+}
+nav {
+  font-variant: all-small-caps;
+}
+h1 {
+  background-color: #65462F;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+background-color: brown;
+color: #E6E798;
+}
+
+summary {
+  font-style: italic;
+}
+
+details {
+  font-style: italic;
+}
+
+footer {
+  background-color: #B1927B;
+}
