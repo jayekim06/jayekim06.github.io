@@ -1,0 +1,56 @@
+:root{
+  --sk1: #A5E4FF;
+  --bbox: #214454;
+  --text: black;
+  --bgpic: url(background.jpg);
+}
+
+body{
+background : var(--bgpic);
+}
+bluebox{
+background-color: var(--bbox);
+}
+skybluebox1{
+background-color: var(--sk1);
+}
+
+skybluebox2{
+background-color: var(--sk1);
+}
+
+skybluebox3{
+background-color: var(--sk1);
+}
+
+skybluebox4{
+background-color: var(--sk1);
+}
+
+skybluebox5{
+background-color: var(--sk1);
+}
+
+skybluebox6{
+background-color: var(--bbox);
+}
+
+h1{
+color: var(--text);
+}
+h5{
+color: var(--text);
+}
+h3{
+color: var(--text);
+}
+h4{
+color: var(--text);
+}
+
+.darkmode{
+--sk1: #868A9B;
+--bbox: #232A4B;
+--text: white;
+--bgpic: url(black.jpg);
+}
