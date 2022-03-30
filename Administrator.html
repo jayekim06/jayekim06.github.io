@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Administrator.css">
+<title>Administrator Page</title>
+</head>
+
+<img src = "studmcm.png" style="z-index:-5;position:absolute; top: 160px; left:0px; opacity: 0.8; padding: 5px; height: 565px;width: 1510px">
+<img src = "studmcm.png" style="z-index:-5;position:absolute; top: 725px; left:0px; opacity: 0.8; padding: 5px; height: 565px;width: 1510px">
+<img src = "studmcm.png" style="z-index:-5;position:absolute; top: 1290px; left:0px; opacity: 0.8; padding: 5px; height: 900px;width: 1510px">
+<body>
+
+<div class="container">
+  <div class="stick">
+    <img src = "sub.png" style="z-index:-4;position:absolute; top: 185px; left:-20px; opacity: 1; padding: 5px; width: 300px">
+    <img src = "sub.png" style="z-index:-4;position:absolute; top: 255px; left:-20px; opacity: 1; padding: 5px; width: 300px">
+    <img src = "sub.png" style="z-index:-4;position:absolute; top: 325px; left:-20px; opacity: 1; padding: 5px; width: 300px">
+
+  <div class="headercontainer">
+    <a href= "SIS Login Form.html">
+    <img src = "logout.png" style ="position: absolute; top: 100px; left: 1460px;width:50px;"> </a>
+    <img src = "mcmlogo.png" style ="position: absolute; top: 40px; left: 370px;width:100px;">
+    <img src = "profile admin.png" style ="position: absolute; top: 40px; right: 25px;height:55px;">
+    <h2>Welcome Admin!</h2>
+    <div class="red1">
+    </div>
+    <div class="red">
+    </div>
+    <div class="yellow">
+    </div>
+    <div class="blue">
+    </div>
+  </div>
+
+
+  <div class = "options">
+    <div class= "students">
+      <a class= "hover" href= "#students">STUDENTS</a>
+    </div>
+
+    <div class= "courses">
+      <a class= "hover" href= "#courses">COURSES</a>
+    </div>
+    <div class= "announcement">
+      <a class= "hover" href= "#announcement">ANNOUNCEMENTS</a>
+    </div>
+  </div>
+</div>
+
+
+  <div id="students">
+  <br><br><br><br><br><br><br><br><br>
+  <box style = "position:absolute; top: 200px; left: 280px;width:1195px; background-color: white;height: 490px;overflow: scroll; border: 3px solid black; z-index:1;">
+  <div class ="rowed">
+  <img src = "pic.jpg" style = "position:absolute; margin-top:10px; left: 70px; width: 170px; opacity: 0.5;">
+  <input type="button" value="Add Student" onclick="addRow()" style = "position: absolute; top: 15px; left:20px;">
+  <input type="button" value="Save Changes" onclick="save()" style = "position: absolute; top: 15px; left:1055px;">
+
+  <label style = "position:absolute;left:350px; margin-top: 35px">First Name</label>
+  <label style = "position:absolute; margin-top: 35px; left:560px;">Middle Name</label>
+  <label style = "position:absolute; margin-top: 35px; left:775px;">Last Name</label>
+  <label style = "position:absolute; margin-top: 35px; left:930px;">Suffix</label>
+  <input type="text" name="fname" style = "position: absolute; margin-top: 10px; left:300px;"/>
+  <input type="text" name="middle" style = "position: absolute; margin-top: 10px; left:510px; width:170px;"/>
+  <input type="text" name="last" style = "position: absolute; margin-top: 10px; left:720px; width:170px;"/>
+  <select name="course" style = "font-size: 15px; position:absolute; left:925px; margin-top: 10px">
+      <option value="N/A">N/A</option>
+      <option value="Jr.">Jr.</option>
+      <option value="Sr.">Sr.</option>
+      <option value="I">I</option>
+      <option value="II">II</option>
+      <option value="III">III</option>
+  </select>
+
+  <label style = "position:absolute;left:475px; margin-top: 95px">Sex</label>
+  <label style = "position:absolute; margin-top: 95px; left:735px;">Birthday</label>
+  <select name="course" style = "position: absolute; margin-top: 70px; left:455px;">
+      <option value="Jr.">Male</option>
+      <option value="Jr.">Female</option>
+
+  </select>
+  <input type="date" name="id" style = "position: absolute; margin-top: 70px; left:685px;"/>
+
+
+  <label style = "position:absolute;left:360px; margin-top: 160px">Program</label>
+  <label style = "position:absolute; margin-top: 160px; left:600px;">Year Level</label>
+  <label style = "position:absolute; margin-top: 160px; left:850px;">ID No.</label>
+  <input type="text" name="year" style = "position: absolute; margin-top: 135px; left:300px;"/>
+  <select name="course" style = "position: absolute; margin-top: 135px; left:590px;">
+      <option value="Jr.">First Year</option>
+      <option value="Jr.">Second Year</option>
+      <option value="Jr.">Third Year</option>
+      <option value="Jr.">Fourth Year</option>
+
+  </select>
+  <input type="text" name="section" style = "position: absolute; margin-top: 135px; left:800px;"/>
+
+  <input type="button" value="Delete" onclick="removeRow()" style = "position: absolute; top: 58px; left:1100px;">
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <div id="content">
+  </div>
+  </div>
+  </box>
+
+  </div>
+
+  <div class = "studentsbox" >
+
+  </div>
+
+
+  <div id="courses">
+    <br><br><br><br><br><br><br><br>
+    <box style = "position:absolute; top: 905px; left: 280px;width:1195px; background-color: white;height: 490px;overflow: scroll; border: 3px solid black; z-index:1;">
+
+    <div class ="rowed1">
+      <img src = "book.png" style = "position:absolute; margin-top:10px; left: 60px; width: 170px; opacity: 0.4;">
+      <input type="button" value="Add Course" onclick="addRow1()" style = "position: absolute; top: 15px; left:20px;">
+      <input type="button" value="Save Changes" onclick="save1()" style = "position: absolute; top: 15px; left:1055px;">
+
+      <label style = "position:absolute;left:370px; margin-top: 60px; font-size: 20px;">Course Name</label>
+      <label style = "position:absolute; margin-top: 60px; left:710px; font-size: 20px;">Course Code</label>
+      <label style = "position:absolute; margin-top: 140px; left:272px; font-size: 20px;">Semester</label>
+      <label style = "position:absolute; margin-top: 140px; left:510px; font-size: 20px;">Term</label>
+      <label style = "position:absolute;left:730px; margin-top: 140px;font-size: 20px;">Instructor</label>
+      <input type="text" name="fname" style = "position: absolute; margin-top: 25px; left:270px;font-size: 20px;width:300px;"/>
+      <input type="text" name="middle" style = "position: absolute; margin-top: 25px; left:680px; width:170px;font-size: 20px;"/>
+      <input type="text" name="middle" style = "position: absolute; margin-top: 110px; left:680px; width:170px;font-size: 20px;"/>
+      <select name="course" style = "font-size: 20px; position: absolute; margin-top: 110px; left:270px;">
+          <option value="N/A">First</option>
+          <option value="Jr.">Second</option>
+          <option value="Sr.">Third</option>
+      </select>
+      <select name="course" style = "font-size: 20px; position:absolute; left:485px; margin-top: 110px">
+          <option value="N/A">First</option>
+          <option value="Jr.">Second</option>
+          <option value="Sr.">Third</option>
+      </select>
+
+      <input type="button" value="Delete" onclick="removeRow1()" style = "border-radius: 10px;font-size: 20px; height: 40px; width:90px;position: absolute; margin-top: 70px; left:980px;">
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <div id="content1">
+      </div>
+      </div>
+
+    </box>
+  </div>
+
+  <div class = "coursesbox">
+
+  </div>
+
+  <div id="announcement">
+  <br><br><br><br><br><br><br>
+  </div>
+
+  <div class = "announcementbox">
+
+  <img src = "plane.png" style = "position:absolute; top: 30px; left:-10px; width:300px;">
+  <img src = "plane1.png" style = "position:absolute; top: 200px; right:20px; width:300px;">
+  <div class= "form">
+  <form>
+    <label for="announce">ANNOUCEMENT FOR:</label>
+    <select name="announce" style = "font-size: 15px;">
+        <option value="Teachers">FACULTY</option>
+        <option value="NETA171P-2">STUDENTS</option>
+        <option value="CPE200D-1">ALL</option>
+    </select>
+  </form>
+
+
+  </div>
+
+ <div class = "textarea">
+   <form onsubmit="sub()" action="#announcement" method="post">
+   <input type="text" placeholder="Enter subject" style="font-size: 15px;width:560px; height: 30px;position:absolute;left:18px; top:20px;" required></input>
+   <textarea placeholder= "Enter announcement here." style="font-size: 15px;width:560px; height: 180px;position:absolute;left:18px; top:80px;" required></textarea>
+   <input type = "submit" value= "Send" style="background-color: #C5C3C3;font-size: 20px;border-radius: 10px;position: absolute; top: 290px; left: 150px; font-family: arial; font-weight: bold; width: 300px; height: 40px;">
+  </form>
+ </div>
+  </div>
+
+</div>
+<script>
+function sub(){
+  alert("Announcement has been successfully deployed.");
+}
+function save(){
+  alert("Student information was successfully saved.");
+}
+
+function save1(){
+  alert("Course information was successfully saved.");
+}
+
+function addRow() {
+  const div = document.createElement('div');
+
+  div.className = 'row';
+
+  div.innerHTML = `
+  <img src = "pic.jpg" style = "position:absolute; margin-top:10px; left: 70px; width: 170px; opacity: 0.5;">
+  <label style = "position:absolute;left:350px; margin-top: 35px">First Name</label>
+  <label style = "position:absolute; margin-top: 35px; left:560px;">Middle Name</label>
+  <label style = "position:absolute; margin-top: 35px; left:775px;">Last Name</label>
+  <label style = "position:absolute; margin-top: 35px; left:930px;">Suffix</label>
+  <input type="text" name="fname" style = "position: absolute; margin-top: 10px; left:300px;"/>
+  <input type="text" name="middle" style = "position: absolute; margin-top: 10px; left:510px; width:170px;"/>
+  <input type="text" name="last" style = "position: absolute; margin-top: 10px; left:720px; width:170px;"/>
+  <select name="course" style = "font-size: 15px; position:absolute; left:925px; margin-top: 10px">
+      <option value="N/A">N/A</option>
+      <option value="Jr.">Jr.</option>
+      <option value="Sr.">Sr.</option>
+      <option value="I">I</option>
+      <option value="II">II</option>
+      <option value="III">III</option>
+  </select>
+
+  <label style = "position:absolute;left:475px; margin-top: 95px">Sex</label>
+  <label style = "position:absolute; margin-top: 95px; left:735px;">Birthday</label>
+  <select name="course" style = "position: absolute; margin-top: 70px; left:455px;">
+      <option value="Jr.">Male</option>
+      <option value="Jr.">Female</option>
+
+  </select>
+  <input type="date" name="id" style = "position: absolute; margin-top: 70px; left:685px;"/>
+
+
+  <label style = "position:absolute;left:360px; margin-top: 160px">Program</label>
+  <label style = "position:absolute; margin-top: 160px; left:600px;">Year Level</label>
+  <label style = "position:absolute; margin-top: 160px; left:850px;">ID No.</label>
+  <input type="text" name="year" style = "position: absolute; margin-top: 135px; left:300px;"/>
+  <select name="course" style = "position: absolute; margin-top: 135px; left:590px;">
+      <option value="Jr.">First Year</option>
+      <option value="Jr.">Second Year</option>
+      <option value="Jr.">Third Year</option>
+      <option value="Jr.">Fourth Year</option>
+
+  </select>
+  <input type="text" name="section" style = "position: absolute; margin-top: 135px; left:800px;"/>
+    <input type="button" value="Delete" onclick="removeRow(this)" style = "position: absolute; left:1100px;" />
+  `;
+
+  document.getElementById('content').appendChild(div);
+}
+
+function removeRow(input) {
+  document.getElementById('content').removeChild(input.parentNode);
+}
+
+
+function addRow1() {
+  const div = document.createElement('div');
+
+  div.className = 'row1';
+
+  div.innerHTML = `
+  <img src = "book.png" style = "position:absolute; margin-top:10px; left: 60px; width: 170px; opacity: 0.4;">
+  <label style = "position:absolute;left:370px; margin-top: 60px; font-size: 20px;">Course Name</label>
+  <label style = "position:absolute; margin-top: 60px; left:710px; font-size: 20px;">Course Code</label>
+  <label style = "position:absolute; margin-top: 140px; left:272px; font-size: 20px;">Semester</label>
+  <label style = "position:absolute; margin-top: 140px; left:510px; font-size: 20px;">Term</label>
+  <label style = "position:absolute;left:730px; margin-top: 140px;font-size: 20px;">Instructor</label>
+  <input type="text" name="fname" style = "position: absolute; margin-top: 25px; left:270px;font-size: 20px;width:300px;"/>
+  <input type="text" name="middle" style = "position: absolute; margin-top: 25px; left:680px; width:170px;font-size: 20px;"/>
+  <input type="text" name="middle" style = "position: absolute; margin-top: 110px; left:680px; width:170px;font-size: 20px;"/>
+  <select name="course" style = "font-size: 20px; position: absolute; margin-top: 110px; left:270px;">
+      <option value="N/A">First</option>
+      <option value="Jr.">Second</option>
+      <option value="Sr.">Third</option>
+  </select>
+  <select name="course" style = "font-size: 20px; position:absolute; left:485px; margin-top: 110px">
+      <option value="N/A">First</option>
+      <option value="Jr.">Second</option>
+      <option value="Sr.">Third</option>
+  </select>
+    <input type="button" value="Delete" onclick="removeRow1(this)" style = "border-radius: 10px;font-size: 20px; height: 40px; width:90px;position: absolute; margin-top: 70px; left:980px;" />`;
+
+  document.getElementById('content1').appendChild(div);
+}
+
+function removeRow1(input) {
+  document.getElementById('content1').removeChild(input.parentNode);
+}
+</script>
+
+</body>
+
+<footer style="position:absolute; top:2180px; height:70px; width:1530px; left:-10px;border-top: 5px solid #BECAFF; background-color:#672229;">
+<label style="position:absolute; top:25px; height:30px; width:1525px; left:50px; font-size: 20px; color:white; font-family:arial;">Copyright 2022 | Malayan Colleges Mindanao | All Rights Reserved | Powered by JK Creations &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSite Map | Privacy and Policy </label>
+</footer>
+
+</html>
