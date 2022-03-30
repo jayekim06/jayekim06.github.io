@@ -1,0 +1,213 @@
+body{
+  background-color:white;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+.headercontainer{
+  position:absolute; top: -30px; left:-10px;
+  opacity: 1;
+  padding: 5px;
+  height: 180px;
+  width: 1530px;
+  background-color:#BECAFF;
+}
+
+.red{
+  position:absolute; top: 20px; left:-10px;
+  background-color: #672229;
+  height:10px;
+  width: 1540px;
+}
+.red1 {
+  position:absolute; top: 160px; left:0px;
+  background-color: #672229;
+  height:10px;
+  width: 1540px;
+}
+.yellow{
+  position:absolute; top: 170px; left:0px;
+  background-color: #ECE31E;
+  height:10px;
+  width: 1540px;
+}
+
+.blue {
+  position:absolute; top: 180px; left:0px;
+  background-color: #212C62;
+  height:10px;
+  width: 1540px;
+}
+
+.headercontainer h2{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 60px;
+  font-family: arial;
+  font-weight:bold;
+  color:black;
+}
+
+.options {
+ position:absolute; top: 50px; left:-10px;
+ margin-top: 150px;
+ height: 200px;
+ width: 250px;
+ color:white;
+ font-family: arial;
+ font-weight: bold;
+}
+
+.students{
+  position:absolute;
+  top: 10px;
+  left:40px;
+}
+
+.hover {
+  display:block;
+  text-decoration: none;
+  color: white;
+}
+
+a.hover:hover{
+color: #868695;
+}
+
+.courses{
+  position:absolute;
+  top: 80px;
+  left:40px;
+
+}
+
+.announcement{
+  position:absolute;
+  top: 150px;
+  left:40px;
+}
+
+.stick {
+  position: sticky;
+  top:0;
+  z-index: 2;
+}
+
+.studentsbox {
+  border-radius: 20px;
+  border: 2px solid black;
+  height: 535px;
+  width:1240px;
+  position: absolute;
+  top: 5px;
+  left: 250px;
+  background-color: #212C62;
+  z-index:-4;
+  position: relative;
+}
+
+
+.coursesbox {
+  border-radius: 20px;
+  border: 2px solid black;
+  height: 535px;
+  width:1240px;
+  background-color: #212C62;
+  z-index:-4;
+  position: relative;
+  margin-top: 25px;
+  left: 250px;
+}
+
+.announcementbox {
+  border-radius: 20px;
+  border: 2px solid black;
+  height: 535px;
+  width:1240px;
+  background-color: #212C62;
+  z-index:-4;
+  position: absolute;
+  margin-top: 40px;
+  left: 260px;
+}
+
+.form {
+  border: 1px solid #666666;
+  border-radius: 10px;
+  position:absolute;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  font-family: arial;
+  top: 70px;
+  left:470px;
+  background-color:#AEE4FF;
+}
+
+.textarea{
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid black;
+  position:absolute;
+  top: 120px;
+  left:300px;
+  width:600px;
+  height: 350px;
+}
+.rowed{
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 1145px;
+  height:190px;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  font-family: arial;
+  background-color:#AEE4FF;
+}
+.row{
+  margin-top: 15px;
+  margin-left: -8px;
+  width: 1145px;
+  height:190px;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  font-family: arial;
+  background-color:#AEE4FF;
+}
+
+.rowed1{
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 1145px;
+  height:190px;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  font-family: arial;
+  background-color:#AEE4FF;
+}
+
+.row1{
+  margin-top: 15px;
+  margin-left: -8px;
+  width: 1145px;
+  height:190px;
+  border: 1px solid #666666;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  text-align: center;
+  font-family: arial;
+  background-color:#AEE4FF;
+}
