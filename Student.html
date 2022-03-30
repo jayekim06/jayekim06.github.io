@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Student.css">
+<title>Student Page</title>
+</head>
+
+<img src = "studmcm.png" style="z-index:-5;position:absolute; top: 200px; left:0px; opacity: 0.8; padding: 5px; height: 540px;width: 1510px">
+<img src = "studmcm.png" style="z-index:-5;position:absolute; top: 740px; left:0px; opacity: 0.8; padding: 5px; height: 540px;width: 1510px">
+<img src = "studmcm.png" style="z-index:-5;position:absolute; top: 1280px; left:0px; opacity: 0.8; padding: 5px; height: 900px;width: 1510px">
+<body>
+
+<div class="container">
+  <div class="stick">
+
+  <div class="headercontainer">
+    <a href= "SIS Login Form.html">
+    <img src = "logout.png" style ="position: absolute; top: 100px; left: 1460px;width:50px;"> </a>
+    <img src = "mcmlogo.png" style ="position: absolute; top: 40px; left: 370px;width:100px;">
+    <img src = "profile stud.png" style ="position: absolute; top: 40px; right: 20px;height:55px;">
+    <h2>Welcome Student!</h2>
+    <div class="red1">
+    </div>
+    <div class="red">
+    </div>
+    <div class="yellow">
+    </div>
+  </div>
+
+
+  <div class = "options">
+    <div class= "grades">
+      <a class= "hover" href= "#grades">GRADES</a>
+    </div>
+
+    <div class= "financial">
+      <a class= "hover" href= "#financial">FINANCIAL REPORTS</a>
+    </div>
+    <div class= "feedback">
+      <a class= "hover" href= "#feedback">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbspCOURSE FEEDBACK</a>
+    </div>
+  </div>
+</div>
+
+
+  <div id="grades">
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <img src = "grades.jpg" style = "position:absolute; top:240px; left: 20px; width: 1475px; height: 472px;border-radius: 10px; z-index:-1;">
+  </div>
+
+  <div class = "gradesbox" >
+
+  </div>
+
+
+  <div id="financial">
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div class="advisory"> <img src="advisory.jpg" style = "width:320px;"></div>
+    <box style = "position:absolute; top: 970px; right: 35px;width:1100px; background-color: white;height: 440px;overflow: scroll; border: 3px solid black; z-index:1;">
+    <img src = "finance.png" style = "width:1060px;">
+     </box>
+
+
+
+  </div>
+
+  <div class = "financialbox">
+
+  </div>
+
+  <div id="feedback">
+  <br><br><br><br><br><br><br><br><br>
+  </div>
+
+  <div class = "feedbackbox">
+
+  <img src = "plane.png" style = "position:absolute; top: 20px; left:0px; width:450px;">
+  <img src = "plane1.png" style = "position:absolute; top: 20px; right:20px; width:450px;">
+  <div class= "form">
+  <form>
+    <label for="course">CHOOSE COURSE:</label>
+    <select name="course" style = "font-size: 15px;">
+        <option value="SAF102">SAF102</option>
+        <option value="NETA171P-2">NETA171P-2</option>
+        <option value="CPE200D-1">CPE200D-1</option>
+        <option value="CPE151">CPE151</option>
+        <option value="CPE151L">CPE151L</option>
+        <option value="CPE107">CPE107</option>
+        <option value="CPE107L">CPE107L</option>
+    </select>
+  </form>
+
+
+  </div>
+
+ <div class = "textarea">
+   <form onsubmit="sub()" action="#feedback" method="post">
+   <textarea placeholder= "Enter comments or suggestions." style="font-size: 20px;width:560px; height: 250px;position:absolute;left:18px; top:20px;" required></textarea>
+   <input type = "submit" value= "Submit" style="background-color: #C5C3C3;font-size: 20px;border-radius: 10px;position: absolute; top: 290px; left: 150px; font-family: arial; font-weight: bold; width: 300px; height: 40px;">
+  </form>
+ </div>
+  </div>
+
+</div>
+<script>
+function sub(){
+  alert("Your feedback has been successfully sent.");
+}
+</script>
+
+</body>
+
+<footer style="position:absolute; top:2180px; height:70px; width:1530px; left:-10px;border-top: 5px solid #BECAFF; background-color:#672229;">
+<label style="position:absolute; top:25px; height:30px; width:1525px; left:50px; font-size: 20px; color:white; font-family:arial;">Copyright 2022 | Malayan Colleges Mindanao | All Rights Reserved | Powered by JK Creations &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSite Map | Privacy and Policy </label>
+</footer>
+
+</html>
